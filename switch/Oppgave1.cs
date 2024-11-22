@@ -21,40 +21,40 @@ namespace switchOppgave
         public void Run()
         {
             Console.WriteLine("OPPGAVE 1");
-            Console.WriteLine("What day is it? Write a number between 1 - 7");
-            string userInput = Console.ReadLine();
-            int dayNumber = Convert.ToInt32(userInput);
-            PrintDay(dayNumber);
+
+            Random random = new Random();
+            int randomNr = random.Next(0,8);
+            Console.WriteLine($"Random number is {randomNr}");
+            PrintDay(randomNr);
         }
 
-        private void PrintDay(int dayNumber)
+        private void PrintDay(int randomNr)
         {
-            switch (dayNumber)
+            switch (randomNr)
             {
                 case 1:
-                    Console.WriteLine("You pressed 1. 1 is Monday, the first day of the week.");
+                    Console.WriteLine("1 is Monday, the first day of the week.");
                     break;
                 case 2:
-                    Console.WriteLine("You pressed 2. 2 is Tuesday, the second day of the week.");
+                    Console.WriteLine("2 is Tuesday, the second day of the week.");
                     break;
                 case 3:
-                    Console.WriteLine("You pressed 3. 3 is Wednesday, the third day of the week.");
+                    Console.WriteLine("3 is Wednesday, the third day of the week.");
                     break;
                 case 4:
-                    Console.WriteLine("You pressed 4. 4 is Thursday, the fourth day of the week.");
+                    Console.WriteLine("4 is Thursday, the fourth day of the week.");
                     break;
                 case 5:
-                    Console.WriteLine("You pressed 5. 5 is Friday, the fifth day of the week.");
+                    Console.WriteLine("5 is Friday, the fifth day of the week.");
                     break;
                 case 6:
-                    Console.WriteLine("You pressed 6. 6 is Saturday, the sixth day of the week.");
+                    Console.WriteLine("6 is Saturday, the sixth day of the week.");
                     break;
                 case 7:
-                    Console.WriteLine("You pressed 7. 7 is Sunday, the seventh and last day of the week.");
+                    Console.WriteLine("7 is Sunday, the seventh and last day of the week.");
                     break;
                 default:
                     Console.WriteLine("Not a valid number.");
-                    Run();
                     break;
             }
         }
