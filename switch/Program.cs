@@ -1,2 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+
+using switchOppgave;
+
+Console.WriteLine("Switch Oppgaver:");
+var Oppgave1 = new Oppgave1();
+Oppgave1.Run();
