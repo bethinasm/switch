@@ -15,7 +15,7 @@ namespace switchOppgave
         */
         public void Run()
         {
-        Console.WriteLine("OPPGAVE 1");
+        Console.WriteLine("OPPGAVE 2");
         Console.WriteLine("What day is it? Write a number between 1 - 7");
         string userInput = Console.ReadLine();
         int dayNumber = Convert.ToInt32(userInput);
